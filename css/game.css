@@ -80,6 +80,19 @@ header {
     opacity: 0.5;
   }
 
+  button { 
+    margin-top: 3vh;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+
+  .return {
+    width: 100%;
+    max-width: 1200px;
+    text-align: end;    
+  }
+
   @media (max-width:425px) {
     .grid {
       display: grid;
