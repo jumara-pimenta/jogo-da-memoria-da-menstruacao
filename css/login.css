@@ -73,3 +73,35 @@
   a:hover {
     text-decoration: underline;
    }
+
+   @media (max-width:425px) {
+    .login-form {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      height: 95.5vh;
+      justify-content: center;
+      background-color: rgb(240, 199, 208);
+    }
+
+    .login__header img {
+      width: 140px;
+      margin-bottom: 2em;
+    }
+
+    .login__header h1 {
+      color: #333;
+      font-size: 1.2em;
+      margin-bottom: 2em;
+      text-align: center;
+      line-height: 30px;
+    }
+
+    .rodape {
+      background-color: rgb(240, 199, 208);
+      text-align: center;
+      line-height: 20px;
+      font-size: 13px;
+
+    }
+   }
