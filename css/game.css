@@ -1,0 +1,81 @@
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 20px 50px;
+    background-color: rgb(240, 199, 208);
+
+}
+
+.swal-text {
+    color: rgb(114, 54, 123);
+    text-align: center;
+    font-size: 15px;
+}
+
+.swal-button {
+  background-color:rgb(114, 54, 123)
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.4);
+    width: 100%;
+    max-width: 1200px;
+    padding: 30px;
+    margin: 0 0 30px;
+    border-radius: 5px;
+}
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 15px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .card {
+    width: 100%;
+    aspect-ratio: 3/4;
+    background-color: rgb(114, 54, 123);
+    border-radius: 5px;
+    position: relative;
+    transition: all 400ms ease;
+    transform-style: preserve-3d;
+  }
+
+  .face {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    border: 2px solid rgb(136, 44, 44);
+    border-radius: 6px;
+    transition: all 500ms ease;
+  }
+
+  .front {
+    transform: rotateY(180deg);
+  }
+
+  .back {
+    background-image: url('../images/carta.png');
+    backface-visibility: hidden;
+  }
+
+  .reveal-card {
+    transform: rotateY(180deg);
+  }
+
+  .disabled-card {
+    filter: saturate(0);
+    opacity: 0.5;
+  }
